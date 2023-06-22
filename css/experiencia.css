@@ -1,0 +1,189 @@
+/*Botón repo*/
+.btn-repo
+{
+    padding: 0.8em 1.8em;
+    border: 2px solid #001524;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #001524;
+    cursor: pointer;
+}
+.btn-repo::before 
+{
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #001524;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.btn-repo:hover 
+{
+    color: #17C3B2;
+}
+.btn-repo:hover::before 
+{
+    width: 100%;
+}
+/*Boton demo*/
+.btn-demo 
+{
+    padding: 0.8em 1.8em;
+    border: 2px solid #001524;
+    position: relative;
+    overflow: hidden;
+    background-color: #001524;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+    cursor: pointer;
+}
+.btn-demo::before 
+{
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+.btn-demo:hover 
+{
+    color: #001524;
+}
+.btn-demo:hover::before 
+{
+    width: 85%;
+}
+
+.experiencia
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-de-texto);
+}
+
+.experiencia__seccion__titulo
+{
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.experiencia__box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 3em 0;
+}
+
+.experiencia__img
+{
+    max-height: 19rem;
+    width: 100%;
+}
+
+.experiencia__info-box
+{
+    margin: 0.5em 0 0 0;
+    padding: 0 0 0.5em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experiencia__titulo
+{
+    font-weight: 700;
+    margin: .5rem 0;
+}
+
+.experiencia__texto
+{
+    font-size: .9rem;
+    font-weight: 500;
+    margin: .5rem 0;
+}
+
+.experiencia__btns
+{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+@media screen and (min-width:767px)
+{
+    .experiencia__seccion__titulo
+    {
+        font-size: 1.4rem;
+    }
+    .experiencia__img
+    {
+        max-height: 26rem;
+    }
+    
+}
+
+@media screen and (min-width: 1024px)
+{
+    .experiencia__seccion__titulo
+    {
+        font-size: 2rem;
+    }
+
+    .experiencia__box
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .experiencia__img
+    {
+        max-height: 24rem;
+    }
+
+    .experiencia__img:hover
+    {
+        transform: scale(1.01);
+        transition: .3s linear;
+    }
+
+    .experiencia__titulo
+    {
+        font-size: 1.4rem;
+    }
+
+    .experiencia__texto
+    {
+        font-size: 1rem;
+
+    }
+}

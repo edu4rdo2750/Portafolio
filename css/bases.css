@@ -1,0 +1,34 @@
+:root
+{
+   --color-de-fondo: #F5F5F5;
+   --color-de-link: #000;
+   --color-de-texto: #464646
+}
+
+body
+{
+    font-family: 'Raleway';
+    background-color: var(--color-de-fondo);
+}
+
+.container
+{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+ol, ul, li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.menu__list a, .menu__list__item__contacto a
+{
+    color: #FFF;
+}

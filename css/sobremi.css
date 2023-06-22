@@ -1,0 +1,43 @@
+.sobre__mi
+{
+    color: var(--color-de-texto);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.sobre__mi-titulo
+{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+}
+
+.sobre__mi-texto
+{
+    font-weight: 400;
+    font-size: .9rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: justify;
+}
+
+.sobre_mi-firma
+{
+    align-items: flex-start;
+    max-width: 9.3rem;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .sobre__mi-titulo
+    {
+        font-size: 2rem;
+    }
+    .sobre__mi-texto
+    {
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,181 @@
+.menu
+{
+    background-color: #001524;
+
+    color: white;
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+
+    border-bottom: 1px solid black;
+
+    position: absolute;
+
+    justify-content: space-between;
+}
+
+.logo__header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nombre__logo
+{
+    padding-left: .6rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.menu__list__item__contacto
+{
+    font-weight: 400;
+}
+
+.menu__list
+{
+    display: none;
+}
+
+
+/*Botones del menu*/
+
+.boton__menu
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+}
+
+.boton__menu
+{
+    font-family: 'Raleway';
+    --primary-color: #fafafa;
+    --hovered-color: #62b0fa;
+    position: relative;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.boton__menu a 
+{
+    margin: 0;
+    position: relative;
+    font-size: 16px;
+    color: var(--primary-color)
+}
+
+.boton__menu::after 
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+}
+
+.boton__menu a::before 
+{
+    position: absolute;
+    content: "";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+} 
+
+.boton__menu:hover::after 
+{
+    width: 100%;
+}
+
+.boton__menu:hover a::before 
+{
+    width: 100%;
+}
+
+/*Contenido de los botones en before*/
+.btn-sobre__mi a::before
+{
+    content: "Sobre mi";
+}
+
+.btn-skills a::before 
+{
+    content: "Skills";
+} 
+
+.btn-hobbies a::before
+{
+    content: "Hobbies";
+}
+
+.btn-formacion a::before
+{
+    content: "Formación";
+}
+
+.btn-experiencia a::before
+{
+    content: "Proyectos";
+}
+
+.btn-contacto a::before
+{
+    content: "eduardo2750@live.com.mx";
+}
+
+
+@media screen and (min-width: 1024px)
+{
+    .menu__links
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu__list__item__contacto
+    {
+        font-weight: 700;
+    }
+
+    .menu__list
+    {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+        font-weight: 500;
+    }
+
+}
+
+@media screen and (min-width: 767px)
+{
+    .menu__list__item__contacto
+    {
+        font-weight: 700;
+    }
+}

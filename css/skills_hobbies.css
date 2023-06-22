@@ -1,0 +1,117 @@
+.skills, .hobbies
+{
+    color: var(--color-de-texto);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.skills__titulo, .hobbies__titulo
+{
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+
+.skills__lista, .hobbies__lista
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: space-between;
+    font-weight: 700;
+    max-width: 330px;
+    padding-bottom: 1rem;
+}
+
+.card 
+{
+    box-sizing: border-box;
+    width: 156px;
+    height: 150px;
+    background: #0015243d;
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    
+}
+
+.card:hover 
+{
+    border: 4px solid #001524;
+    transform: scale(1.15);
+    background-image: radial-gradient(circle at 11.49% 72.23%, #118de3 0, #035690 50%, #002545 100%);
+    transition: .3s linear;
+    color: white;
+    cursor: default;
+}
+
+.skills__box, .hobbies__box 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 16px;
+    width: 148px;
+    height: 118px;
+}
+
+@media screen and (min-width: 767px)
+{
+
+    .skills__lista, .hobbies__lista
+    {
+        max-width: 710px;
+    }
+
+    .skills__box, .hobbies__box
+    {
+        width: 216px;
+        height: 118px;
+    }
+
+    .card
+    {
+        width: 224px;
+    } 
+
+}
+
+@media screen and (min-width: 1024px)
+{
+    .skills__lista, .hobbies__lista
+    {
+        max-width: 1140px;
+        justify-content: space-around;
+        padding-right: 0%;
+    }
+
+    .skills__box, .hobbies__box
+    {
+        width: 176px;
+        height: 174px;
+    }
+
+    .card
+    {
+        width: 176px;
+        height: 180px;
+    } 
+}
